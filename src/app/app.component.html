@@ -1,4 +1,6 @@
 <div class="center">
+  
+  <button (click)="toggleContent()">{{ label }}</button>
   <app-child [show]="show">
     <!-- <div>Inside app child</div> -->
     <!-- <app-projected></app-projected> -->
@@ -10,7 +12,6 @@
       <app-projected appDummy></app-projected>
     </ng-container> -->
     <div>Inside app child</div>
-    <button (click)="toggleContent()">{{ label }}</button>
     <ng-template>
       <app-projected></app-projected>
     </ng-template>
