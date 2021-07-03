@@ -1,0 +1,18 @@
+<div class="center">
+  <app-child [show]="show">
+    <!-- <div>Inside app child</div> -->
+    <!-- <app-projected></app-projected> -->
+    <!-- <app-projected id="app"></app-projected> -->
+    <!-- <app-projected appDummy></app-projected> -->
+    <!-- <app-projected appDummy></app-projected> -->
+    <!-- <ng-container ngProjectAs="[group]">
+      <div>Inside app child</div>
+      <app-projected appDummy></app-projected>
+    </ng-container> -->
+    <div>Inside app child</div>
+    <button (click)="toggleContent()">{{ label }}</button>
+    <ng-template>
+      <app-projected></app-projected>
+    </ng-template>
+  </app-child>
+</div>
