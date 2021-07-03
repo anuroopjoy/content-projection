@@ -11,7 +11,7 @@ export class AppComponent {
   show = false;
 
   toggleContent() {
-    this.label = 'Destroy';
     this.show = !this.show;
+    this.label = this.show ? 'Destroy': 'Create';
   }
 }
